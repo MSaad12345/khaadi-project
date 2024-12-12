@@ -1,0 +1,282 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.prenav{
+    display: flex;
+    position: fixed;
+    top: 0px;
+    height: 3rem;
+    padding: 0px 3px;
+    width: 100%;
+    justify-content:space-between;
+    background-color: #adb4be ;
+    align-items: center;
+    font-size: 12px;
+    
+}
+button{
+    cursor: pointer;
+    padding: 2px 14px;
+    border: none;
+    background-color: #adb4be;
+    
+    
+}
+button:hover{
+    text-decoration: underline;
+
+}
+.para{
+    margin-left: 440px;
+}
+.menu{
+    display: none;
+    cursor: pointer;
+}
+nav{
+    font-size: 14px;
+    position: fixed;
+    margin-top: 50px;
+    display: flex;
+    font-weight: bold;
+    background-color: white;
+    top:-2px;
+    width: 100%;
+    padding: 20px 15px;
+    /* height: 4rem; */
+}
+
+.navbar li{
+    display:inline-block;
+    margin: 1px 16px;
+}
+
+.list{
+    color: rgb(57, 52, 52);
+    display: flex;
+    margin-left: 190px;
+
+    
+}
+
+.list .fa  {
+    color: black;
+}
+#sidebutton{
+    margin-left: 160px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+#sidebutton i{
+     font-size: 20px;
+    margin-left: -10px;
+}
+.list a{
+    color: rgb(64, 59, 59);
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 650;
+    margin-left: 10px;
+
+}
+#bbbb :hover{
+    color: rgb(60, 59, 59);
+}
+#bbbb{
+    padding-top: 8px;
+
+}
+.cc{
+    margin-top: 90px;
+   }
+
+#home img{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+    
+}
+.dropsale{
+
+    position: relative;
+    display: inline-block;
+    
+}
+.dropsale-content{
+    margin-top: 20px;
+    height: 250px ;
+    padding: 20px;
+    width: 500px;
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 100px;
+    box-shadow:0px 8px 16px 0px rgb(0,0,0,0.2) ;
+    z-index: 1;
+    
+}
+.dropsale-content img{
+    height: 200px;
+    width: 200px;
+}
+.dropsale-content a{
+    color: black;
+    display: block;
+    text-decoration: none;
+    padding: 12px 10px;
+    text-align: center;
+    
+
+}
+.dropsale:hover .dropsale-content{
+    
+    display: block;
+    display: flex;
+}
+.grid{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(251, 249, 247);
+}
+.grid div{
+    display: grid;
+    grid-template-columns: 80px 1fr;
+}
+.grid div i{
+    margin-top: 30%;
+     margin-left: 35%;
+     
+}
+.grid a{
+    color: black;
+
+}
+.grid i{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    
+    height: 30px;
+    width: 30px;
+    padding: 3px;
+    border: 2px dotted rgb(214, 145, 145);
+    border-radius: 50%;
+    color: rgb(217, 83, 83);
+
+
+}
+.fordisplayblock a{
+    text-decoration: none;
+    color: black;
+}
+
+.fordisplayblock i {
+    margin-right: 20px;
+}
+.grid1{
+    display: grid;
+    padding: 9px 3px;
+    text-decoration: none;
+    grid-template-columns: 1fr 1fr 1fr ;
+    display: flex;
+    justify-content: space-around;
+}
+.grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-around;
+
+}
+.grid2 input{
+    border: none;
+}
+.grid2 button{
+    background-color: black;
+    color: aliceblue;
+    border-radius: 18px;
+    padding: 7px 8px;
+}
+footer{
+    display: grid;
+       display: flex;
+       justify-content: space-around;
+    grid-template-columns: 1fr 1fr 2fr;
+    margin-bottom: 30px;
+}
+.khaadi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+ .khaadi img{
+    height: 50px ;
+    width: 50px;
+}
+
+     /* login button css */
+ .containerclass{
+    display: none;
+    position: fixed;
+    z-index: 1;
+ }  
+ 
+
+
+.imgcontainerimg{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+display: flex;
+flex-direction: column;
+    color: #002a32;
+    cursor: all-scroll;
+    background-color: #f9fafc;
+    height: 400px;
+    margin-left: -200%;
+    overflow: hidden;
+    width: 340px;
+    border: 1px solid gray;
+    border-radius: 44px;
+    padding: 30px;
+    
+
+
+
+}
+input,button,label{
+    margin: 5px;
+    border: none;
+    outline: none;
+
+}
+.psw{
+    cursor: pointer;
+    margin-top: -20px;
+    margin-left: 70%;
+    font-size: 12px;
+}
+.checkbox{
+    font-weight: 100;
+    margin-top: 10px;
+}
+.imgcontainerimg button{
+    color:white;
+    background-color: #002a32;
+    padding: 9px;
+    margin: 20px;
+    border-radius: 40px;
+    width: 300px;
+}
+.lastfooter{
+    display: none;
+}

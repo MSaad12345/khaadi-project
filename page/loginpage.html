@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button onclick="document.getElementById('id').style.display='block'">///</button>
+    <div id="id" class="Model">
+        <div class="imgcontainer">
+
+            <span class="close"></span>
+        </div>
+        <div class="container">
+            <label for=""><b>Username</b></label>
+            <input type="text" placeholder="Enter Username">
+            <label for="psw"><b>Passward</b></label>
+            <input type="password" name="" id="" placeholder="Enter Password">
+            <button type="submit">Login</button>
+            <label for="">
+                <input type="checkbox">Remember me
+            </label>
+            <button type="button" onclick="document.getElementById('id').style.display='none'">Cancel</button>
+            <span class="psw">Forget <a href="">Passward</a>
+            </span>
+        </div>
+    </div>
+    <script>
+        var Model = document.getElementById('id');
+        window.onclick = function (onsroll) {
+            if (onsroll.target == Model) {
+
+                Model.style.display = "none"
+            }
+        }
+        window.addEventListener('scroll' , ()=> {
+            Model.style.display='none'
+        });
+
+    </script>
+
+    <div class="section">
+        <div class="mysection">
+            <div class="numbertext">1/3</div>
+            <img style="width: 300px; height: 300px;"
+                src="https://images.unsplash.com/photo-1620554600249-636b81e27699?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="">
+        </div>
+        <div class="mysection">
+            <div class="numbertext">2/3</div>
+            <img style="width: 300px; height: 300px;"
+                src="https://plus.unsplash.com/premium_photo-1678167657994-5b96138b6abb?q=80&w=1938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="">
+
+        </div>
+        <div class="mysection">
+            <div class="numbertext">3/3</div>
+            <img style="width: 300px;height: 300px;"
+                src="https://images.unsplash.com/photo-1630349575347-89fde96c7e4f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="hdhg">
+
+        </div>
+
+    </div>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        function showSlides() {
+            let i;
+            let slide = document.getElementsByClassName("mysection");
+            for (let i = 0; i < slide.length; i++) {
+                slide[i].style.display = 'none';
+            }
+            slideIndex++;
+            if (slideIndex > slide.length) {
+
+                slideIndex = 1;
+            }
+            slide[slideIndex-1].style.display ="block";
+            setTimeout(showSlides, 3000)
+        }
+    </script>
+
+
+</body>
+
+</html>

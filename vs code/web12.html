@@ -1,0 +1,199 @@
+s
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"   href="web7.css">
+
+</head>
+<style>
+    .slideshow-container {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 100px 100px 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        animation-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-name: leElevateLeft
+    }
+
+
+
+    @keyframes leElevateLeft {
+        from {
+            transform: translateY(100%) rotate(-20deg);
+            transform-origin: right;
+            opacity: 0;
+        }
+
+        40% {
+            transform: translateX(100%) rotate(20deg);
+            transform-origin: right;
+        }
+
+        65% {
+            transform: rotate(0deg);
+            transform-origin: right;
+        }
+    }
+</style>
+
+<body>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="https://pk.khaadi.com/on/demandware.static/-/Sites-storefront-catalog-pak/default/dw2d650729/0.0-01-13-2023-Featured-Categoriespring.png"
+                style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="https://pk.khaadi.com/on/demandware.static/-/Sites-storefront-catalog-pak/default/dw426fbad3/images/megamenu/0.0-sale1-Featured-Categories1.png"
+                style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="https://pk.khaadi.com/on/demandware.static/-/Sites-storefront-catalog-pak/default/dwf1908dca/images/megamenu/0.0-sale1-Featured-Categories4.png"
+                style="width:100%">
+        </div>
+    </div>
+    <script>
+         
+
+    </script>
+    <!-- <script>
+        let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let slides = document.getElementsByClassName("mySlides");
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+    </script> -->
+
+    <script>
+        let x = 4;
+
+        if (x % 2 === 0) {
+            console.log(x + "even")
+        } else {
+            console.log(x + "odd")
+        }
+
+        //2nd
+        switch (Grades = 70) {
+            case 90:
+                console.log("A")
+                break;
+            case 80:
+                console.log('B')
+                break;
+            case 70:
+                console.log("C")
+                break;
+            case 60:
+                console.log("D")
+                break;
+
+            default:
+                console.log("F")
+                break;
+        }
+//3rd
+
+        let Largest = 10;
+        if (15 > Largest) {
+            Largest = 15;
+        }
+        if (54 > Largest) {
+            Largest = 54;
+        }
+        console.log(Largest)
+
+        //4th
+        let num1 = 3;
+        let num2 = 5;
+        console.log(num1 + num2)
+        console.log(num1 - num2)
+        console.log(num1 * num2)
+        console.log(num1 / num2)
+
+        //5th
+        switch (4) {
+            case 1:
+                console.log("Monday")
+
+                break;
+            case 2:
+                console.log("Tuesday")
+                break;
+            case 3:
+                console.log("wednesday")
+                break;
+            case 4:
+                console.log("Thursday")
+                break;
+            case 5:
+                console.log("Friday")
+                break;
+            case 6:
+                console.log("Saturday")
+                break;
+
+            default:
+                console.log("Sunday")
+                break;
+        }
+
+    </script>
+    
+    <h1> Even Or Odd </h1>
+    <input type="number" id="inputget" placeholder="enter">
+    <button onclick="clickit()">click</button>
+<script>
+    function clickit() {
+        var number =document.getElementById("inputget").value
+        if (number% 2 ===0) {
+            console.log( number + "even")
+            
+        }else{
+            console.log("odd" +number)
+        }
+    }
+
+    let num3 =parseFloat(prompt("enter first"));
+    let num4 = parseFloat(prompt("second"));
+    let num5 = parseFloat(prompt("third"));
+    function name() {
+        if (num3>= num4 && num3>=num5) {
+            console.log(num3)
+            
+        }else if (num4>=num5 && num4>=num5) {
+            console.log(num4)
+        } else {
+            console.log(num5)
+        }
+        
+    }
+    console.log( name + "largest")
+</script>
+  <h1>try</h1>
+  <p id="demo" onselect="helo()">Java Script what can do
+  </p>
+  <script>
+    function helo() {
+        document.getElementById("demo").style.color="red";
+    }
+  </script>
+</body>
+
+</html>
